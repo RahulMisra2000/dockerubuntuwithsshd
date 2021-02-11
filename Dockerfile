@@ -14,6 +14,9 @@ RUN apt update  \
 # install ip
 RUN apt install -y iproute2
 
+# This package has tools, amongst them, netstat
+RUN apt install -y net-tools
+
 # install vi
 RUN apt install -y vim
 
