@@ -17,6 +17,8 @@ RUN apt install -y iproute2
 # install vi
 RUN apt install -y vim
 
+# The newer way to manage service is with systemctl command of systemD system
+# This (service) is another way
 RUN service ssh start
 
 EXPOSE 22
