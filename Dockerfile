@@ -27,6 +27,9 @@ RUN apt install -y net-tools
 # install vi
 RUN apt install -y vim
 
+# install tmux - great tool for managing sessions  (ctrl-B S)
+RUN apt install -y tmux
+
 # The newer way to manage service is with systemctl command of systemD system
 # This (service) is another way
 RUN service ssh start
